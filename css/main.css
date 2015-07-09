@@ -5,18 +5,13 @@
 
 .primary {
   position: absolute;
-  transition-duration: 1s;
 }
 
 .secondary {
-  transform: rotateY(-180deg);
-  transition-duration: 1s;
-}
-
-.portfolio-item:hover .primary {
-  transform: rotateY(180deg);
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .portfolio-item:hover .secondary {
-  transform: rotateY(0deg);
+  opacity: 1;
 }
